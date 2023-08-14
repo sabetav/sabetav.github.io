@@ -12,11 +12,11 @@
 }
 
 ul{
-    list-style-image: url(imagen/bullet.png);
+    list-style-image: url(https://cdn.discordapp.com/attachments/942949040293834813/1140520813800456243/bullet.png);
 }
 
 body{
-    background-image: url(/imagen/bg.png);
+    background-image: url(https://cdn.discordapp.com/attachments/942949040293834813/1140440426516578415/bg.png);
 }
 
 
@@ -59,7 +59,7 @@ h3 {
 .book{
     width: 900px;
     height: 520px;
-    background-image: url(imagen/esqueleto.png);
+    background-image: url(https://cdn.discordapp.com/attachments/942949040293834813/1140440427003138138/esqueleto.png);
     background-size: 100% 100%;
     position: absolute;
     left: 0;
@@ -91,7 +91,7 @@ h3 {
     transition: transform 0.5s;
     
     
-    background-image: url(imagen/paper_bg.png);
+    background-image: url(https://cdn.discordapp.com/attachments/942949040293834813/1140440462084296914/paper_bg.png);
     background-size: cover;
     border-radius: 0 5% 5% 0;
     
@@ -244,7 +244,7 @@ button:focus{
     width: 450px;
     height: 520px;
     margin: auto;
-    background-image: url(imagen/portada.png);
+    background-image: url(https://cdn.discordapp.com/attachments/942949040293834813/1140440462621151263/portada.png);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -258,12 +258,12 @@ button:focus{
     top: 225px; right: 20px;
     height: 45px;
     width: 60px;
-    background-image: url(imagen/closed.png);
+    background-image: url(https://cdn.discordapp.com/attachments/942949040293834813/1140440426743087155/closed.png);
     background-size: cover;
 }
 
 .btn:hover{
-    background-image: url(imagen/open.png);
+    background-image: url(https://cdn.discordapp.com/attachments/942949040293834813/1140440428764741632/open.png);
     background-size: cover;
 }
 
