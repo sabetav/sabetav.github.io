@@ -1,39 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Montserrat:wght@200&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Montserrat:wght@200&family=Schoolbell&display=swap');
-
-}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     max-width: 100%;
-}
-
-ul{
-    list-style-image: url(https://cdn.discordapp.com/attachments/942949040293834813/1140520813800456243/bullet.png);
+    max-height: 100%;
 }
 
 body{
     background-image: url(https://cdn.discordapp.com/attachments/942949040293834813/1140440426516578415/bg.png);
 }
 
-
-
 h1 {
     font-family: 'Cherry Bomb One', cursive;
     text-shadow: 1px 1px 2px #123644;
     color: white;
+    margin-bottom: 1vh;
+    font-size: 2vw;
 }
 
-ul {
+h2, h3{
+    font-size: 1.7vw;
+}
+
+ul{
+    list-style-image: url(https://cdn.discordapp.com/attachments/942949040293834813/1140520813800456243/bullet.png);
     text-align: start;
+    padding: 0 0 0 2em;
 }
 
 .texto {
-    padding: 0 40px 0 40px;
     color: #123644;
+    font-size: 1.3vw;
 }
 
 .texto p {
@@ -41,8 +41,9 @@ ul {
     font-family: Schoolbell;
 }
 
-h3 {
+h3, h2 {
     text-align: start;
+    margin-bottom: 1vh;
 }
 
 
@@ -54,11 +55,12 @@ h3 {
     border: 1px #ffa1c5 dashed;
     padding: 0.5em;
     color: #ffa1c5;
+    margin-bottom: 1vw;
 }
 
 .book{
-    width: 900px;
-    height: 520px;
+    width: 70%;
+    height: 80%;
     background-image: url(https://cdn.discordapp.com/attachments/942949040293834813/1140440427003138138/esqueleto.png);
     background-size: 100% 100%;
     position: absolute;
@@ -95,13 +97,13 @@ h3 {
     background-size: cover;
     border-radius: 0 5% 5% 0;
     
+    overflow: auto;
 }
 
 .front{
     z-index: 1;
     backface-visibility: hidden;
 }
-
 .back{
     z-index: 0;
 }
@@ -109,15 +111,14 @@ h3 {
 .front-content, .back-content{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: auto;
+    padding: 2.5vw 4vw 2.5vw 4vw;
 }
 .back-content{
     transform: rotateY(180deg);
 }
 
 /* Paper flip */
+
 .flipped .front,
 .flipped .back {
     transform: rotateY(-180deg);
@@ -128,7 +129,7 @@ button{
     border: none;
     background-color: transparent;
     cursor: pointer;
-    margin: 10px;
+    margin: 1vw;
     transition: transform 0.5s;
     z-index: 7;
 }
@@ -142,7 +143,7 @@ button:focus{
     top: 0;
     bottom: 0;
     left: 0;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 3vw;
 }
 
 #next-btn{
@@ -150,7 +151,7 @@ button:focus{
     top: 0;
     bottom: 0;
     right: 0;
-    margin: 0 30px 0 0;
+    margin: 0 3vw 0 0;
 }
 
 /*ID*/
@@ -159,11 +160,12 @@ button:focus{
     border-radius: 8px;
     transform: rotate(-0.025turn);
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 2vw;
+    top: 2vw;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     cursor: pointer;
     transition: 0.3s;
+    height: 25vh;
 }
 
 #id:hover{
@@ -179,7 +181,6 @@ button:focus{
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.9);
 }
@@ -256,8 +257,8 @@ button:focus{
 .btn {
     position: absolute;
     top: 225px; right: 20px;
-    height: 45px;
-    width: 60px;
+    height: 4.5vw;
+    width: 6vw;
     background-image: url(https://cdn.discordapp.com/attachments/942949040293834813/1140440426743087155/closed.png);
     background-size: cover;
 }
@@ -269,33 +270,26 @@ button:focus{
 
 /* Stickers */
 
+
+#tama {
+    position: absolute;
+    top: 12vh;
+    right: 20vh;
+    z-index: 7;
+    width: 10vw;
+}
+
 #supplies{
     position: absolute;
     top: 0;
     bottom: 0;
     right: 2%;
     margin: auto;
-    z-index: -1;
+    z-index: 1;
+    width: 15vw;
 }
 
-/* Scrollbar */
 
-::-webkit-scrollbar {
-    width: 16px;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 8px;
-    background-color: #e7e7e7;
-    border: 1px solid #cacaca;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    border: 3px solid transparent;
-    background-clip: content-box;
-    background-color: #ffb4d5;
-}
 
 @media only screen and (max-width: 700px){
     .modal-content {
